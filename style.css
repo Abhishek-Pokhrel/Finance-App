@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); /*400*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); /*500*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap'); /*700*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+
+.left-components{
+    margin-left: 30px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-components .title{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 30px;
+    text-overflow: nowrap;
+    color: #6C6B6B;;
+}
+
+
+.right-components{
+    margin-right: 30px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-components .home{
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 48px;
+    text-decoration: none;
+    color: #00606D;
+}
+
+.right-components .about-us{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 48px;
+    background-color: #00606D;
+    color: white;
+    border: none;
+    padding: 21px, 33px;
+    border-radius: 4px;
+    width: 170px;
+    height: 60px;
+    margin-top: 5px;
+}
+
+
+
+
+/* Add component */
+
+
+
+.add-component-display{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+
+/* Left coln */
+
+.left-coln{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 40px;
+}
+
+
+.left-coln .left-coln-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    color: #6C6B6B;
+    margin-bottom: 25px;
+}
+
+
+.left-coln p{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 33px;
+color: #6C6C6C;
+}
+
+.left-coln input{
+    border: 2px solid #AFAFAF;
+    border-radius: 4px;
+    height: 38px;
+    padding: 5px;
+    font-size: 20px;
+}
+#name{
+    width: 537px;
+}
+
+
+.add-expense{
+    display: flex;
+    background: #6C6B6B;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 14px 20px;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: Roboto;
+    margin-left: 72px;
+}
+
+.left-coln .name-input,
+.left-coln .date-input,
+.left-coln .amount-input
+{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.dt-amt{
+    display: flex;
+    gap: 10px;
+}
+
+#date{
+    margin-left: 10px;
+}
+
+
+
+/* Right column */
+
+
+.right-coln{
+    border: 4px solid #00606D;
+    border-radius: 4px;
+    margin-right: 30px;
+    margin-left: 200px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-coln-title{
+    font-family: Roboto;
+    font-weight: 500;
+    color: #00606D;
+    font-size: 30px;
+    line-height: 36px;
+}
+.title-sec{
+    display: flex;
+    justify-content: spa;
+    align-items: center;
+    margin-left: 10px;
+    width: 50px;
+}
+
+.right-coln-expense-value{
+    background-color: #00606D;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    color: white;
+    font-size: 30px;
+    font-family: Roboto;
+    height: 80px;
+}
+
+
+
+/* bottom component */
+
+.final-col{
+    display: flex;
+    flex-direction: column;
+}
+.bottom-coln{
+    display: flex;
+    font-family: Roboto;
+    font-size: 22px;
+    color: #6B6B6B;
+    margin-left: 40px;
+    justify-content: space-evenly;
+    width: 195%;
+    font-weight: 700;
+}
+
+.bottom-coln div{
+border: 3px solid #CACACA;
+width: 100%;
+padding: 10px 10px;
+margin-left: -3px;
+}
+
+
+
+.bottom-title{
+    display: flex;
+    font-family: Roboto;
+    font-size: 22px;
+    color: black;
+    margin-left: 40px;
+    justify-content: flex-start;
+    width: 195%;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+.bottom-title div{
+    border: 2px solid #6C6B6B;
+    width: 100%;
+    padding: 10px 10px;
+    margin-left: -2px;
+    color: #6C6B6B;
+    font-weight: 600;
+}
+
+
+.bottom-entities{
+    display: flex;
+    font-family: Roboto;
+    font-size: 22px;
+    color: black;
+    margin-left: 40px;
+    justify-content: flex-start;
+    width: 195%;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+.bottom-entities div{
+    background: #E4E4E4;
+    width: 100%;
+    padding: 10px 10px;
+    margin-left: -3px;
+
+}
+
+
+
+.delbutton{
+    border: none;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    font-size: 30px;
+}
