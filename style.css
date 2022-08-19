@@ -10,6 +10,10 @@
 }
 
 
+body{
+    transition: 0.15s all;
+}
+
 nav{
     justify-content: space-between;
     align-items: center;
@@ -28,7 +32,7 @@ nav{
 .left-components .title{
     font-family: Roboto;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 24px;
     text-overflow: nowrap;
     color: #6C6B6B;;
 }
@@ -45,16 +49,18 @@ nav{
 .right-components .home{
     font-family: Roboto;
     font-weight: 600;
-    font-size: 26px;
+    font-size: 20px;
     line-height: 48px;
     text-decoration: none;
     color: #00606D;
+    transition: 0.15s color;
 }
+
 
 .right-components .about-us{
     font-family: Roboto;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 20px;
     line-height: 48px;
     background-color: #00606D;
     color: white;
@@ -64,9 +70,31 @@ nav{
     width: 170px;
     height: 60px;
     margin-top: 5px;
+    transition: 0.15s all;
+    cursor: pointer;
 }
 
 
+.about-us:hover{
+    background: none;
+    border: 1px solid white;
+}
+
+.right-components .mode{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 48px;
+    background-color: #00606D;
+    color: white;
+    border: none;
+    padding: 21px, 33px;
+    border-radius: 28px;
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+
+}
 
 
 /* Add component */
@@ -75,8 +103,12 @@ nav{
 
 .add-component-display{
     display: grid;
+    justify-content: stretch;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
+    margin-bottom: 10px;
+    
 }
 
 
@@ -107,7 +139,7 @@ nav{
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
-font-size: 18px;
+font-size: 14px;
 line-height: 33px;
 color: #6C6C6C;
 }
@@ -117,12 +149,20 @@ color: #6C6C6C;
     border-radius: 4px;
     height: 38px;
     padding: 5px;
-    font-size: 20px;
+    font-size: 15px;
 }
 #name{
     width: 537px;
 }
 
+.btns{
+    display: flex;
+    /* border: 1px solid black; */
+    width: 87%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 .add-expense{
     display: flex;
@@ -131,10 +171,32 @@ color: #6C6C6C;
     border-radius: 4px;
     color: white;
     padding: 14px 20px;
-    font-size: 22px;
+    font-size: 15px;
     font-weight: 500;
     font-family: Roboto;
     margin-left: 72px;
+    transition: 0.15s background-color;
+}
+
+.add-expense:hover,
+.del-expense:hover
+{
+    background-color: rgb(43, 43, 43);
+}
+
+
+.del-expense{
+    display: flex;
+    background: #6C6B6B;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 14px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Roboto;
+    margin-right: 4px;
+    transition: 0.15s background-color;
 }
 
 .left-coln .name-input,
@@ -161,7 +223,8 @@ color: #6C6C6C;
 
 
 .right-coln{
-    border: 4px solid #00606D;
+    /* width: 50%; */
+    border: 3px solid #00606D;
     border-radius: 4px;
     margin-right: 30px;
     margin-left: 200px;
@@ -175,7 +238,7 @@ color: #6C6C6C;
     font-family: Roboto;
     font-weight: 500;
     color: #00606D;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 36px;
 }
 .title-sec{
@@ -192,12 +255,14 @@ color: #6C6C6C;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    gap: 10px;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     font-family: Roboto;
-    height: 80px;
+    height: 50px;
+    border-radius: 3px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 
@@ -235,7 +300,7 @@ margin-left: -3px;
     color: black;
     margin-left: 40px;
     justify-content: flex-start;
-    width: 195%;
+    width: 95.5%;
     font-weight: 400;
     margin-bottom: 2px;
 }
@@ -257,16 +322,18 @@ margin-left: -3px;
     color: black;
     margin-left: 40px;
     justify-content: flex-start;
-    width: 195%;
+    width: 95.5%;
     font-weight: 400;
     margin-bottom: 2px;
 }
 
 .bottom-entities div{
-    background: #E4E4E4;
+    background: #757575;
+    color: white;
     width: 100%;
     padding: 10px 10px;
     margin-left: -3px;
+    padding-left: 20px;
 
 }
 
@@ -281,4 +348,9 @@ margin-left: -3px;
     justify-content: center;
     width: 100px;
     font-size: 30px;
+    transition: 0.15s background-color;
+}
+
+.delbutton:hover{
+    background-color: rgb(43, 43, 43);
 }
